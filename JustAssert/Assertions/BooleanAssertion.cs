@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using JustAssert.Contracts;
+using JustAssert.Safe;
 
-namespace JustAssert
+namespace JustAssert.Assertions
 {
     /// <summary>
     /// Class that represent simple boolean assertion.
@@ -33,7 +35,7 @@ namespace JustAssert
 
         public IEnumerable<string> GetFailsMessages()
         {
-            var value = mAssertion.ExecuteSafely();
+            var value = mAssertion.ExecuteGeneratorSafely();
             if (value.Failed)
                 mExceptionProcessor?.Invoke(value.Exception);
 

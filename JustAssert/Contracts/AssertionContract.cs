@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace JustAssert
+namespace JustAssert.Contracts
 {
     /// <summary>
     /// Interface for assertion class.

@@ -41,11 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BooleanAssertion.cs" />
-    <Compile Include="FuncExtension.cs" />
-    <Compile Include="Assertion.cs" />
+    <Compile Include="Assertions\BooleanAssertion.cs" />
+    <Compile Include="Assertions\ThrowableAssertion.cs" />
+    <Compile Include="Assertions\ThrowableAssertionWithValueGeneration.cs" />
+    <Compile Include="Safe\SafeExtensions.cs" />
+    <Compile Include="Contracts\AssertionContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SafeExpression.cs" />
+    <Compile Include="Safe\SafeAction.cs" />
+    <Compile Include="Safe\SafeGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
